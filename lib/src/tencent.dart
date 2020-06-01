@@ -76,7 +76,7 @@ class Tencent {
     String universalLink,
   }) {
     assert(appId != null && appId.isNotEmpty);
-    assert(!Platform.isIOS || universalLink == null);
+    assert(Platform.isIOS || universalLink == null);
     final Map<String, dynamic> arguments = <String, dynamic>{
       _ARGUMENT_KEY_APPID: appId,
 //      _ARGUMENT_KEY_UNIVERSALLINK: universalLink,
